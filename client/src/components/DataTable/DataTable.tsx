@@ -13,7 +13,7 @@ const DataTable: React.FunctionComponent<IDataTableProps> = (props) => {
     const copyClipBoard = async(url:string)=>{
         try {
             await navigator.clipboard.writeText(`${serverUrl}/shortUrl/${url}`)
-            alert(`Link copied ${serverUrl}/shortUrl/${url}`)
+            alert(`Link copied at your clipboard`)
         } catch (error) {
             console.log(error)
         }
