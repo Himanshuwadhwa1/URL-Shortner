@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cors({
-    origin: "http://localhost:4000",
+    origin: "https://url-shortner-pi.vercel.app/",
     credentials:true,
 }))
 app.use('/api',router);
