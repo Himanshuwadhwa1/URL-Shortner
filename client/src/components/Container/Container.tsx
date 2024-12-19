@@ -9,6 +9,7 @@ interface IContainerProps {
 
 const Container: React.FunctionComponent<IContainerProps> = () => {
     const [data,setData] = React.useState<UrlData[]>([]);
+    console.log(serverUrl);
     const fetchTable= async()=>{
         const response = await axios.get(`${serverUrl}/shortUrl`);
         setData(response.data);
